@@ -1,10 +1,4 @@
-%% start of file `template.tex'.
-%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
-%
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
-
+%% start of file `stevenheidel.tex'.
 
 \documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
@@ -15,7 +9,7 @@
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % character encoding
-%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
@@ -52,66 +46,72 @@
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
-%-----       resume       ---------------------------------------------------------
+
 \makecvtitle
 
 \section{Education}
-\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}  % arguments 3 to 6 can be left empty
-\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
 
-\section{Master thesis}
-\cvitem{title}{\emph{Title}}
-\cvitem{supervisors}{Supervisors}
-\cvitem{description}{Short thesis abstract}
+\cventry{August 2009-- April 2014}{Honours in Computer Science}{University of Saskatchewan}{Saskatoon}{\textit{87\%}}{Description}  % arguments 3 to 6 can be left empty
 
 \section{Experience}
-\subsection{Vocational}
-\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}%
-Detailed achievements:%
-\begin{itemize}%
-\item Achievement 1;
-\item Achievement 2, with sub-achievements:
-  \begin{itemize}%
-  \item Sub-achievement (a);
-  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
-    \begin{itemize}
-    \item Sub-sub-achievement i;
-    \item Sub-sub-achievement ii;
-    \item Sub-sub-achievement iii;
-    \end{itemize}
-  \item Sub-achievement (c);
-  \end{itemize}
-\item Achievement 3.
-\end{itemize}}
-\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
-\subsection{Miscellaneous}
-\cventry{year--year}{Job title}{Employer}{City}{}{Description}
 
-\section{Languages}
-\cvitemwithcomment{Language 1}{Skill level}{Comment}
-\cvitemwithcomment{Language 2}{Skill level}{Comment}
-\cvitemwithcomment{Language 3}{Skill level}{Comment}
+\subsection{Work}
 
-\section{Computer skills}
-\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
-\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
-\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+\cventry{January 2009--Present}{Owner}{Living Sky Web Development}{Saskatoon}{}{Description}
 
-\section{Interests}
-\cvitem{hobby 1}{Description}
-\cvitem{hobby 2}{Description}
-\cvitem{hobby 3}{Description}
+\cventry{March 2013--August 2013}{Co-Founder and CTO}{Encore}{Toronto}{}{Description}
 
-\section{Extra 1}
-\cvlistitem{Item 1}
-\cvlistitem{Item 2}
-\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+\cventry{May 2012--April 2013}{Vice President (Operations and Finance)}{University of Saskatchewan Student's Union}{Saskatoon}{}{Description}
 
-\section{Extra 2}
-\cvlistdoubleitem{Item 1}{Item 4}
-\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
-\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+\cventry{April 2011--May 2011}{Youth Relations Officer and Central Poll Supervisor}{Elections Canada}{Prince Albert}{}{Description}
+
+\cventry{July 2009--August 2010}{Office Consultant}{OnTask Rehab Incorporated}{Prince Albert}{}{Description}
+
+\cventry{August 2007--July 2009}{Concession Worker}{City of Prince Albert}{Prince Albert}{}{Description}
+
+\cventry{September 2007 to November 2007}{Elections Clerk}{Elections Saskatchewan}{Prince Albert}{}{Description}
+
+\subsection{Volunteer}
+
+\cventry{August 2011--Present}{Various Representative Positions}{University of Saskatchewan}{Saskatoon}{}{Description}
+
+\cventry{March 2013}{Master of Ceremonies and Judge}{Skills Saskatchewan Provincial Competition}{Saskatoon}{}{Description}
+
+\cventry{March 2012}{Master of Ceremonies and Team Delegate}{Skills Saskatchewan Provincial Competition}{Regina}{}{Description}
+
+\cventry{September 2010--April 2011}{Study Session Leader}{University Learning Centre}{Saskatoon}{}{Description}
+
+\cventry{January 2010--February 2011}{Core Contributor}{RefineryCMS}{Online}{}{Description}
+
+\cventry{April 2007--April 2010}{Volunteer Official}{Sask Athletics}{Saskatoon}{}{Description}
+
+\subsection{Other}
+
+\cventry{April 2013--August 2013}{Entrepreneur}{The Next 36}{Toronto}{}{Description}
+
+\cventry{April 2010--October 2011}{WorldSkills Champion}{Skills Canada}{Ottawa}{}{Description}
+
+\cventry{August 2010--January 2011}{Information Director}{JDC West 2011 Organizing Committee}{Saskatoon}{}{Description}
+
+\section{Honours and Awards}
+
+\cvitemwithcomment{Queen's Diamond Jubilee Medal}{Government of Canada}{September 2012}
+\cvitemwithcomment{Valedictorian}{The Next 36}{August 2013}
+\cvitemwithcomment{Chancellor's Scholarship}{University of Saskatchewan}{April 2009}
+\cvitemwithcomment{Millennium Scholarship}{Government of Canada}{April 2009}
+\cvitemwithcomment{Allan Blakeney Award}{University of Saskatchewan}{April 2009}
+
+\section{Technical Experience}
+
+\subsection{Extremely Proficient With:}
+
+\cvline{languages}{C, C++, Ruby, HTML, CSS, JSON}
+\cvline{technologies}{Rails, RefineryCMS, Git, Vim, Bootstrap, Ubuntu, Windows, Microsoft Office}
+
+\subsection{Have Experience With:}
+
+\cvline{languages}{Python, PHP, JavaScript, Matlab, Java, Objective C, Prolog, Haskell, Coq}
+\cvline{technologies}{Bash Scripting, \LaTeX{}, MySQL, jQuery, Google App Engine, Django}
 
 \section{References}
 \begin{cvcolumns}
@@ -162,4 +162,4 @@ Albert Einstein discovered that $e=mc^2$ in 1905.
 \end{document}
 
 
-%% end of file `template.tex'.
+%% end of file `stevenheidel.tex'.
