@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
+\documentclass[11pt,letter,sans]{moderncv}
 
 \moderncvstyle{banking}
 \moderncvcolor{blue}
@@ -7,23 +7,52 @@
 \usepackage[scale=0.8]{geometry}
 \nopagenumbers{}
 
+\newcommand*{\cvsimple}[4][.25em]{
+  \begin{tabular*}{\maincolumnwidth}{l@{\extracolsep{\fill}}r}
+    {\itshape #3} & {\itshape #2}\\
+  \end{tabular*}
+  \ifx&#4&
+  \else{\\
+    \begin{minipage}{\maincolumnwidth}
+      \small#4
+    \end{minipage}}\fi
+  \par\addvspace{#1}}
+
 \name{Steven}{Heidel}
-\title{R\'esum\'e}
 \phone[fixed]{+1~(650)~944~9541}
 \email{steven@heidel.ca}
-\social[linkedin]{stevenheidel}
+\homepage{stevenheidel.com}
 
 \begin{document}
 
-\makecvtitle  
+\makecvtitle
+
+\vspace{-1.2cm}
 
 \section{Summary}
 
-Software engineer with 4 years experience building scalable applications. Functional programming advocate.  Engineering team lead. Former startup founder. Fluent in Java 8, Scala, and Ruby. Familiar with Javascript, Python, and Kotlin. Experienced in Play, Rails, Elasticsearch, Kafka, Samza, and Spark. Proud Canadian.
+I develop software and develop people. In the past I've helped build quantum computers, created new professional social networking apps, and co-founded a startup in the entertainment space.
 
 \section{Experience}
 
-\cventry{December 2016--Present}{Staff Software Engineer}{LinkedIn}{San Francisco, CA}{}{
+\cventry{May 2018 -- May 2019}{Software Engineering Manager}{Rigetti Quantum Computing}{Berkeley, CA}{}{
+\begin{itemize}
+\item Managed a team of five software engineers to scale out internal tools and databases
+\item Delivered multiple wins including improving fabrication efficiency, unlocking new kinds of quantum experiments, and orders of magnitude increases to performance
+\item Scaled Postgres to handle terabytes of experimental physics data
+\item Set up hiring process, trained interviewers on how to conduct software engineering interviews, and managed senior engineer hiring
+\end{itemize}
+}
+
+\cvsimple{Sep 2017 -- May 2018}{Senior Software Engineer}{
+\begin{itemize}
+\item Led development of Rigetti's first cloud quantum computing product
+\item Created a highly optimized open-source RPC framework over ZeroMQ
+\item Implemented backend with Python 3 using asyncio and frontend with React, GraphQL, and Typescript
+\end{itemize}
+}
+
+\cventry{Dec 2016 -- Sep 2017}{Staff Software Engineer}{LinkedIn}{San Francisco, CA}{}{
 \begin{itemize}
 \item Lead engineer on the Enterprise Platform (EP) team. EP provides common functionality such as license management, external integrations, and access control to all enterprise applications at LinkedIn.
 \item Rebuilt enterprise search platform from the ground up to use Elasticsearch. This increased maintainability and led to a 10x decrease in cost as well as significant performance improvements. Used Spark to build offline indexes.
@@ -32,7 +61,7 @@ Software engineer with 4 years experience building scalable applications. Functi
 \end{itemize}
 }
 
-\cventry{September 2015--December 2016}{Senior Software Engineer}{LinkedIn}{Sunnyvale, CA}{}{
+\cvsimple{Sep 2015 -- Dec 2016}{Senior Software Engineer}{
 \begin{itemize}
 \item Worked on LinkedIn Lookup: the fastest way to find, learn about, and contact anyone at your company
 \item Architected the API server using Scala and Play to communicate with the web and mobile apps
@@ -41,7 +70,7 @@ Software engineer with 4 years experience building scalable applications. Functi
 \end{itemize}
 }
 
-\cventry{August 2014--September 2015}{Software Engineer}{LinkedIn}{Mountain View, CA}{}{
+\cvsimple{Aug 2014 -- Sept 2015}{Software Engineer}{
 \begin{itemize}
 \item Worked on Campaign Manager, a product which advertisers use to manage \$400M+ worth of campaigns per year
 \item Added key features such as targeting selection and segment reports
@@ -49,25 +78,15 @@ Software engineer with 4 years experience building scalable applications. Functi
 \end{itemize}
 }
 
-\cventry{March 2013--August 2014}{Co-Founder and CTO}{Encore}{Toronto, ON}{}{
+\cventry{Mar 2013 -- Aug 2014}{Co-Founder and CTO}{Encore}{Toronto, ON}{}{
 \begin{itemize}
-\item Encore was a four-person startup created through The Next 36 program
-\item Developed prototype in Ruby on Rails, then rewrote it to be entirely non-blocking using Scala and Play
-\item Used REST APIs to collect photos and videos from across the web and match them up with local events
-\end{itemize}
-}
-
-\cventry{July 2014--August 2014}{Research Assistant}{University of Saskatchewan}{Saskatoon, SK}{}{
-\begin{itemize}
-\item Assisted Dr. Artur Sowa, a professor in the Mathematics Department, on numerical simulations relating to Adiabatic Quantum Computing
-\item Optimized MATLAB algorithms to increase speed of the calculation by 100x
+\item Encore was an iPhone app designed around the memories created at live music shows
+\item Founded as part of The Next 36 startup accelerator program, which included both venture funding and a subset of MBA classes from the University of Toronto
 \end{itemize}
 }
 
 \section{Education}
 
-\cventry{September 2009--April 2014}{B.Sc. (High Honours) in Computer Science, Minor in Mathematics}{University of Saskatchewan}{Saskatoon, SK}{}{}
-
-Selected as Computer Science Valedictorian for academic achievement and involvement
+\cventry{Sep 2009 -- Apr 2014}{B.Sc. (High Honours) in Computer Science, Minor in Mathematics}{University of Saskatchewan}{Saskatoon, SK}{}{}
 
 \end{document}
